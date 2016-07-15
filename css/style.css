@@ -547,10 +547,10 @@ img a {
 #wrapper {
     position: absolute;
     display: inline-block;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @media ( max-width: 800px ) {
@@ -565,14 +565,12 @@ img a {
 }
 
 header {
-  position: relative;
   margin: 0 auto;
-  padding: 0;
   width: 100%;
   padding:  1px 0;
   height: 350px;
   position: relative;
-  background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header.png") no-repeat 0% 100%;
+  background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header.png") no-repeat 0 100%;
   background-size: cover;
   border-bottom: 2px solid #dedede;
 }
@@ -601,9 +599,7 @@ header:after {
 }*/
 
 #home #wrapper > header {
-  position: relative;
   margin: 0 auto;
-  padding: 0;
   width: 100%;
   padding:  1px 0;
   height: 100%;
@@ -616,7 +612,7 @@ header:after {
 @media ( max-width: 800px ) {
   #home #wrapper > header {
       height: 350px;
-        background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header_small.png") no-repeat 0% 100%;
+        background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header_small.png") no-repeat 0 100%;
   }
 }
 
@@ -673,11 +669,11 @@ header:after {
   background-color: rgba(255,255,255,0.75);
   top: 40%;
   transform: translate(0px, -50%);
-  left: 0%;
-  right: 0%;
-      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  left: 0;
+  right: 0;
+      -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.25);
 }
 
 @media ( max-width: 800px ) {
@@ -687,7 +683,7 @@ header:after {
     margin: 65px auto 0;
     padding-bottom: 5%;
   }
-} 
+}
 
 #site-title img {
   max-width: 100%;
@@ -739,7 +735,7 @@ header:after {
   display: none;
 }
 #search-container input[type=text], #search-container button {
-  border: 0px solid #ccc;
+  border: 0 solid #ccc;
   background: #fafafa;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -782,7 +778,6 @@ header:after {
 #site-title #search-container {
   float: none;
   width: 90%;
-  position: relative;
   font-size: 1.16667em;
   line-height: 1.28571em;
   position: relative;
@@ -819,7 +814,7 @@ header:after {
   top: 0;
   width: 35px;
   text-indent: -9999px;
-  border-left: 0px;
+  border-left: 0;
 }
 
 #site-title #search-container button:after {
@@ -888,7 +883,7 @@ header:after {
   margin: 0;
 }
 #advanced-form > *:last-child {
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 #advanced-form.open {
   display: block;
@@ -950,7 +945,7 @@ header:after {
   clear: both;
   position: relative;
   margin: -40px auto 25px;
-  padding: 0 0 0 0px;
+  padding: 0 0 0 0;
   width: 755px;
   z-index: 50;
   background: transparent;
@@ -1032,8 +1027,8 @@ header:after {
   margin: 0;
   border-top: 2px solid #dedede;
   border-right: 1px solid #dedede;
-  border-left: 0px solid #dedede;
-  border-bottom: 0px;
+  border-left: 0 solid #dedede;
+  border-bottom: 0;
   color: #006d44;
   text-transform: uppercase;
   font-size: 15px;
@@ -1060,7 +1055,7 @@ header:after {
 #primary-nav .nav-item > a:focus,
 #primary-nav .nav-item > a.open {
   border: 1px solid #dedede;
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 #primary-nav .nav-item > a.open {
   background-color: #fafafa;
@@ -1071,7 +1066,7 @@ header:after {
   display: none;
   top: 38px;
   left: -1px;
-  margin: 0px;
+  margin: 0;
   padding: 0;
   border: 1px solid #dedede;
   background-color: #fff;
@@ -1111,8 +1106,7 @@ header:after {
 }
 #primary-nav .sub-nav > li {
   border-color: #ccc;
-  border-bottom-width: 0.08333em;
-  border-bottom-style: solid;
+  border-bottom: 0.08333em solid;
   padding-bottom: -0.08333em;
 }
 #primary-nav .sub-nav a {
@@ -1228,14 +1222,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', end
 /* @group ----- Global selectors ----- */
 #content {
   overflow: hidden;
-  border: 0px solid #ccc;
+  border: 0 solid #ccc;
   background: #fff;
   position: relative;
   margin: 0 auto;
-  padding: 0;
   width: 960px;
-  padding: 0em 10px;
+  padding: 0 10px;
   z-index: 0;
+  outline: none;
 }
 #content:after {
   content: "\0020";
@@ -1320,10 +1314,7 @@ nav + .exhibit {
 /* @group ----- Home Page ----- */
 #home #primary {
   float: left;
-  float: left;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 460px;
   margin-left: 0;
   margin-right: 0;
@@ -1350,11 +1341,9 @@ nav + .exhibit {
   }
 }
 #home #secondary {
-  float: right;
   float: left;
   display: inline;
   margin-left: 10px;
-  margin-right: 10px;
   width: 460px;
   margin-right: 0;
   padding-left: 10px;
@@ -1393,7 +1382,7 @@ nav + .exhibit {
 
 @media only screen and (max-width: 800px) {
   .featured, #featured-exhibit {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -1428,7 +1417,7 @@ nav + .exhibit {
 }
 
 .view-items-link {
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 
 /* @end */
@@ -1436,9 +1425,8 @@ nav + .exhibit {
 .items #content {
   position: relative;
   margin: 0 auto;
-  padding: 0;
   width: 960px;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 .items #content:after {
   content: "\0020";
@@ -1684,8 +1672,6 @@ ul.title-list {
 .browse .item-meta {
   float: left;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 700px;
   margin: 0;
   max-width: 100%;
@@ -1717,8 +1703,6 @@ ul.title-list {
 .browse .item-meta > div {
   float: left;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 460px;
   margin: 0;
   max-width: 100%;
@@ -1847,10 +1831,7 @@ ul.title-list {
 .browse .exhibit h2 {
   float: left;
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
   width: 220px;
-  margin-left: 0;
   margin: 0;
   max-width: 100%;
 }
@@ -1949,8 +1930,7 @@ ul.title-list {
 .collections .item {
   overflow: hidden;
   border-color: #ccc;
-  border-top-width: 0.08333em;
-  border-top-style: solid;
+  border-top: 0.08333em solid;
   padding-top: -0.08333em;
   margin-top: 1.5em;
 }
@@ -2008,11 +1988,10 @@ ul.title-list {
 footer {
   clear: both;
   position: relative;
-  margin: 0 auto;
   padding: 0;
   width: 960px;
   overflow: hidden;
-  margin-top: 1.5em;
+  margin: 1.5em auto 0;
 }
 footer:after {
   content: "\0020";
@@ -2089,7 +2068,7 @@ footer nav + p {
 @media only screen and (max-width: 500px) {
     .footer-block a img {
     display: block;
-    margin: 0px auto 20px;
+    margin: 0 auto 20px;
     }
 }
 
@@ -2104,8 +2083,8 @@ footer nav + p {
 .footer-block ul li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0px;
-  padding: 0px 3px;
+  margin: 0;
+  padding: 0 3px;
 }
 
 .mediablock {
@@ -2113,9 +2092,9 @@ footer nav + p {
   height: 50px;
   width: 50px;
   display: block;
-  background: #A41800 none repeat scroll 0% 0%;
+  background: #A41800 none repeat scroll 0 0;
   text-align: center;
-  padding: 15px 0px;
+  padding: 15px 0;
   color: #FFF !important;
   font-size: 30px;
   float: left;
@@ -2188,18 +2167,16 @@ footer nav + p {
 }
 #exhibit-pages > ul {
   margin-left: 0;
-  border-top-width: 0.08333em;
-  border-top-style: solid;
   padding-top: 1.41667em;
   border-color: #eee;
+  border-top: 0.08333em solid;
   padding-left: 0;
   list-style-type: none;
 }
 #exhibit-pages > ul > li {
-  border-bottom-width: 0.08333em;
-  border-bottom-style: solid;
   padding-bottom: 1.41667em;
   border-color: #eee;
+  border-bottom: 0.08333em solid;
   margin-bottom: 1.5em;
 }
 #exhibit-pages ul li > ul {
@@ -2239,10 +2216,8 @@ footer nav + p {
 .exhibits.summary #primary {
   float: left;
   display: inline;
-  margin-left: 10px;
   margin-right: 10px;
   width: 700px;
-  margin-left: 0;
   padding-right: 20px;
   margin-left: 0;
 }
@@ -2371,7 +2346,7 @@ footer nav + p {
     clear: both;
     width: 100%;
     margin-top: 1.5em;
-    margin-bottom: 0em;
+    margin-bottom: 0;
   }
 
   /* @end */
@@ -2500,7 +2475,7 @@ footer nav + p {
     margin: 0 1.5em 0 0;
   }
   .browse .item-meta .item-img img {
-    margin-top: 0em;
+    margin-top: 0;
   }
 
   .browse .item {
@@ -2550,7 +2525,6 @@ footer nav + p {
   width: 725px;
   height: auto;
   border-top: 1px solid #db8e00;
-  padding: 30px 0 0;
   padding: 30px 0 10px;
   position: relative;
   margin: 0 auto 5px;
@@ -2576,7 +2550,7 @@ footer nav + p {
   display: inline-block;
   width: 225px;
   height: 225px;
-  margin: 0px 20px 20px 0px;
+  margin: 0 20px 20px 0;
   position: relative;
 }
 
@@ -2601,7 +2575,7 @@ footer nav + p {
 
 @media ( max-width: 800px ) {
   #box.end {
-    margin: 0px !important;
+    margin: 0 !important;
   }
 }
 
@@ -2611,7 +2585,7 @@ footer nav + p {
   text-align: center;
   text-transform: uppercase;
   font-size: 25px;
-  margin: 0px 0 0;
+  margin: 0 0 0;
   padding: 5px 0;
   z-index: 3;
   line-height: 1;
@@ -2718,7 +2692,7 @@ background-size: cover;
 #auto_content #secondary {
   width: 100%;
   margin: 0;
-  padding: 0px 0px 0px 20px;
+  padding: 0 0 0 20px;
   border-left: 1px solid rgb(219, 142, 0);
 }
 
@@ -2798,23 +2772,23 @@ background-size: cover;
     text-decoration: none;
     color: #fff;
     padding: 25px 10px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
 }*/
 
 #home a.scrollup {
     width: 100%;
     height: 35px;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     display: block;
     background: #006d44;
     text-decoration: none;
     color: #fff;
     padding: 8px 0 0;
-    text-indent: 0px;
+    text-indent: 0;
     font-size: 14px;
     text-align: center;
     transition: all 1s ease;
@@ -2905,7 +2879,7 @@ margin-bottom: 20px;
 }
 
 .show #primary .element p {
-  margin: 0 0px 1.5em;
+  margin: 0 0 1.5em;
 }
 
 a[href*="viaf.org"]:after {
@@ -2933,9 +2907,9 @@ a[href*="viaf.org"]:after {
   -webkit-transform: rotate(-20deg); /* Safari */
   transform: rotate(-20deg);
   text-align: center;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
   z-index: 99;
 }
 
@@ -2953,8 +2927,8 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     display: block;
     position: absolute;
     top: 10px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 50px;
     padding: 5px 0;
@@ -2963,15 +2937,14 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-transform: rotate(0deg); /* Safari */
     transform: rotate(0deg);
     text-align: center;
-    -webkit-box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 10px 5px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 10px 5px 5px rgba(0,0,0,0.75);
+  box-shadow: 0 10px 5px 5px rgba(0,0,0,0.75);
     z-index: 2;
   }
   .ribbon h1 {
     color: #fff;
     padding: 0;
-    margin: 0;
     font-size: 20px;
     position: relative;
     margin: 0 auto;
