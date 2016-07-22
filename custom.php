@@ -84,5 +84,5 @@ function custom_paging()
 // Remove VIAF IDs
 function stripVIAF($citation_string)
 {
-    return preg_replace('/\d\d\d\d\d\d\d\d/','',$citation_string);
+    return preg_replace('/\d{8,12}/','',$citation_string);
 }
