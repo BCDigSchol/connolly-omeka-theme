@@ -9,7 +9,7 @@
           <div id="item-metadata">
               <?php echo all_element_texts('item'); ?>
           </div>
-       
+
       </div>
 
 
@@ -18,7 +18,7 @@
 
           <!--<h3><?php echo __('Files'); ?></h3>-->
           <div id="item-images">
-               <?php echo files_for_item(); ?>
+               <?php echo files_for_item(array('imageSize'=>'fullsize')); ?>
           </div>
 
             <?php if(metadata('item','Collection Name')): ?>
