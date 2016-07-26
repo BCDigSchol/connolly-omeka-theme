@@ -9,7 +9,7 @@
 
 ?>
 
-
+<?php $num_solr_results = count($results->response->docs); ?>
 <?php queue_css_file('results'); ?>
 <?php echo head(array('title' => __('Search')));?>
 
@@ -84,7 +84,7 @@
 
   <!-- Number found. -->
   <h2 id="num-found">
-    <?php echo $results->response->numFound; ?> results
+    <?php echo $results->response->numFound; ?> result<?php if ($num_solr_results !== 1): ?>s<?php endif; ?>
   </h2>
 
   <?php foreach ($results->response->docs as $doc): ?>
