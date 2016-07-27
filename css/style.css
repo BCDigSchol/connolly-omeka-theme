@@ -2942,3 +2942,9 @@ box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     left: 0;
      }
 }
+
+img.full {
+    max-width: 97%;
+    border: 1px solid #dadbde;
+    box-shadow: 2px 2px 1px 0 #98979A;
+}
