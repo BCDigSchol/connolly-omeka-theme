@@ -55,27 +55,33 @@ $cleaned_query = html_escape($_GET['q']);
 
                 <!-- Facet label. -->
                 <?php $label = SolrSearch_Helpers_Facet::keyToLabel($name); ?>
-                <strong><?php echo $label; ?></strong>
 
-                <ul>
-                    <!-- Facets. -->
-                    <?php foreach ($facets as $value => $count): ?>
-                        <li class="<?php echo $value; ?>">
+                <?php if ($label !== 'Result Type'): ?>
 
-                            <!-- Facet URL. -->
-                            <?php $url = SolrSearch_Helpers_Facet::addFacet($name, $value); ?>
+                    <?php $label = 'Collection' ? 'Type' : $collection; ?>
 
-                            <!-- Facet link. -->
-                            <a href="<?php echo $url; ?>" class="facet-value">
-                                <?php echo $value; ?>
-                            </a>
+                    <strong><?php echo $label; ?></strong>
 
-                            <!-- Facet count. -->
-                            (<span class="facet-count"><?php echo $count; ?></span>)
+                    <ul>
+                        <!-- Facets. -->
+                        <?php foreach ($facets as $value => $count): ?>
+                            <li class="<?php echo $value; ?>">
 
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
+                                <!-- Facet URL. -->
+                                <?php $url = SolrSearch_Helpers_Facet::addFacet($name, $value); ?>
+
+                                <!-- Facet link. -->
+                                <a href="<?php echo $url; ?>" class="facet-value">
+                                    <?php echo $value; ?>
+                                </a>
+
+                                <!-- Facet count. -->
+                                (<span class="facet-count"><?php echo $count; ?></span>)
+
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                <?php endif; ?>
 
             <?php endif; ?>
 
@@ -115,9 +121,6 @@ $cleaned_query = html_escape($_GET['q']);
                         }
                         echo $title;
                         ?></a>
-
-                    <!-- Result type. -->
-                    <span class="result-type">(<?php echo $doc->resulttype; ?>)</span>
 
                 </div>
 
