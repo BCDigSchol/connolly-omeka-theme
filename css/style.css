@@ -2921,7 +2921,7 @@ a[href*="viaf.org"]:after {
   -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.55);
 -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.55);
 box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.55);
-  z-index: 99;
+  z-index: 1001;
 }
 
 .ribbon h1 {
