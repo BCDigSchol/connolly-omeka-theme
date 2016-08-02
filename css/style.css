@@ -711,7 +711,7 @@ header:after {
     padding-top: 20%;
     background-size: 100%;
   }
-  #site-title a:hover {
+  #site-title > a:hover {
      display: block;
     width: 100%;
     min-width: 250px;
@@ -860,6 +860,27 @@ header:after {
   line-height: 30px;
 }
 
+@media ( max-width: 800px ) {
+  .show-advanced.button:hover {
+    width: 40px !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    min-height: 1px !important;
+    right: 40px !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    padding: 0 !important;
+    border-left: 1px solid #005177 !important;
+    position: absolute !important;
+    text-decoration: none !important;
+    text-indent: -9999px !important;
+    behavior: url("../javascripts/boxsizing.htc") !important; 
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box!important ;
+  }
+}
+
 #advanced-form {
   display: none;
   background-color: #fff;
@@ -868,7 +889,7 @@ header:after {
   position: absolute;
   top: 30px;
   left: 0;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #ae7100;
   width: 100%;
   padding: 1.5em 1em;
   *behavior: url("../javascripts/boxsizing.htc");
@@ -944,8 +965,8 @@ header:after {
   position: relative;
   margin: -40px auto 25px;
   padding: 0 0 0 0;
-  width: 755px;
-  z-index: 50;
+  width: 760px;
+  z-index: 1001;
   background: transparent;
 
   /* mega menu list */
