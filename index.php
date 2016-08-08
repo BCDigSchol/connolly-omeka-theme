@@ -1,7 +1,7 @@
 <?php echo head(array('bodyid'=>'home', 'bodyclass' =>'two-col')); ?>
 
 <div class="intro">
-    <p>The Boston College Libraries are delighted to present this preview of <em>The Séamus Connolly Collection of Irish Music</em>, a digital collection that will be launched in fall 2016. The collection will feature traditional tunes and songs collected by master fiddle player Séamus Connolly, who was Sullivan Family Artist-in-Residence at Boston College from 2004 to 2015. Freely available, it will offer over 330 audio recordings featuring more than 130 musicians via <a href="https://soundcloud.com/connollymusiccollection/" target="_blank">SoundCloud</a>, with accompanying stories, transcriptions, and introductory essays. </p>
+    <p>The Boston College Libraries are delighted to present this preview of <em>The Séamus Connolly Collection of Irish Music</em>, a digital collection that will be launched in fall 2016. The collection will feature traditional tunes and songs collected by master fiddle player Séamus Connolly, Sullivan Family Artist-in-Residence at Boston College from 2004 to 2015. Freely available, it will offer over 330 audio recordings featuring more than 130 musicians via <a href="https://soundcloud.com/connollymusiccollection/" target="_blank">SoundCloud</a>, with accompanying stories, transcriptions, and introductory essays. </p>
 
     <p>Scroll below to enjoy featured samples and visit this site again in Fall!</p>
 
