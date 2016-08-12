@@ -1,4 +1,4 @@
-<!--Updated July 5, 2016 AK -->
+
 <?php
 $pageTitle = __('Browse Content'); /*Updated browse page title to reflect navigation tab  */
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
@@ -6,7 +6,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
-<p>Contents can be browsed alphabetically using the sort by "title" function or "stories" function, which represents the organization and order of the music originally envisioned by Séamus Connolly. </p>
+<p>Contents can be browsed alphabetically using the sort by "title" function or "playlist" function, which represents the organization and order of the music originally envisioned by Séamus Connolly. </p>
 
 <nav class="items-nav navigation secondary-nav">
     <?php echo public_nav_items(); ?>
@@ -20,7 +20,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
-$sortLinks[__('Stories')]='Dublin Core,Identifier';
+$sortLinks[__('Playlists')]='Dublin Core,Identifier';
 /* Suppressing sort links that are not being used AK
 $sortLinks[__('Date Added')] = 'added';*/
 ?>
