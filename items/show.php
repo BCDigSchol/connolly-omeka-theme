@@ -1,4 +1,3 @@
-<!--Updated June 15, 2016 AK -->
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <div id="primary">
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
@@ -40,7 +39,7 @@
          <!-- The following prints a list of all tags associated with the item -->
     <?php if (metadata('item','has tags')): ?>
     <div id="item-tags" class="element">
-        <h3><?php echo __('Tags'); ?></h3>
+        <h3>Part of:</h3>
         <div class="element-text"><?php echo tag_string('item'); ?></div>
     </div>
     <?php endif;?>
