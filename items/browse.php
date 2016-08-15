@@ -20,7 +20,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
-$sortLinks[__('Playlists')]='Dublin Core,Identifier';
+$sortLinks[__('Playlist')]='Dublin Core,Identifier';
 /* Suppressing sort links that are not being used AK
 $sortLinks[__('Date Added')] = 'added';*/
 ?>
@@ -62,7 +62,8 @@ if(isset($_SERVER['QUERY_STRING']) && !empty($_SERVER['QUERY_STRING']))
     <?php endif; ?>
 
     <?php if (metadata('item', 'has tags')): ?>
-    <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
+    <div class="tags"><p><strong>
+      <?/*<?php echo __('Tags');?>*/ ?>Part of:</strong>
         <?php echo tag_string('items'); ?></p>
     </div>
     <?php endif; ?>
