@@ -25,7 +25,7 @@
                         'Go to search settings to select record types to use.'
                     ); ?></a></p>
         <?php endif; ?>
-        <p><?php echo link_to_item_search(__('Advanced Search (Items only)')); ?></p>
+        <p><?php echo link_to_item_search(__('Advanced Search')); ?></p>
     </div>
 <?php else: ?>
     <?php echo $this->formHidden('query_type', $filters['query_type']); ?>
