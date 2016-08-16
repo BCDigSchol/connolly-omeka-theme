@@ -1597,6 +1597,11 @@ ul.title-list {
   margin-right: 3px;
 }
 
+.hTagcloud li a {
+  font-size: 16px;
+}
+
+/*
 .popular a {
   font-size: 120%;
 }
@@ -1631,7 +1636,7 @@ ul.title-list {
 
 .vvvvvvvv-popular a {
   font-size: 360%;
-}
+} */
 
 /* @end */
 /* @group ----- Items/Browse ----- */
