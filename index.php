@@ -15,7 +15,7 @@
     </a>
 
     <a href="http://connollymusiccollection.bc.edu/collections/browse?sort_field=Dublin+Core%2CTitle" id="box" class="gray">
-        <h3>Browse By Song & Tune Type</h3>
+        <h3>Song & Tune Type</h3>
         <span class="innerbox hill"></span>
     </a>
 
