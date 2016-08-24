@@ -654,6 +654,9 @@ header:after {
   width: 725px;
   height: 210px;
   background-color: rgba(255,255,255,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.25);
 }
 
 #home #wrapper #site-title {
@@ -675,7 +678,8 @@ header:after {
 }
 
 @media ( max-width: 800px ) {
-  #home #wrapper #site-title {
+
+  #home #wrapper #site-title, #site-title {
     width: 100%;
     height: auto;
     margin: 65px auto 0;
@@ -2973,4 +2977,27 @@ img.full {
     max-width: 97%;
     border: 1px solid #dadbde;
     box-shadow: 2px 2px 1px 0 #98979A;
+}
+
+/* SEARCH RESULTS MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+
+  #solr-facets {
+    width: 100%;
+    float: none;
+  }
+
+  #solr-facets ul {
+    margin: 5px 0 0;
+  }
+
+  #solr-results {
+    width: 100%;
+    margin: 0;
+  }
+
+  .result > ul {
+    display: none;
+  }
 }
