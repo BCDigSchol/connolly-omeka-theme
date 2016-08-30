@@ -1,10 +1,9 @@
 <?php
-$pageTitle = __('Browse Song & Tune Types');
+$pageTitle = __('Song & Tune Types');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 <h1><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h1>
 <?php echo pagination_links(); ?>
-<p>When available, an Irish language equivalent of song or tune type is provided.</p>
 
 <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
