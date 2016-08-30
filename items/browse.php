@@ -6,7 +6,6 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
-<p>Contents can be browsed alphabetically using the sort by "title" function or "playlist" function, which represents the organization and order of the music originally envisioned by Séamus Connolly. </p>
 
 <nav class="items-nav navigation secondary-nav">
     <?php echo public_nav_items(); ?>
