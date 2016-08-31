@@ -45,7 +45,7 @@ $cleaned_query = html_escape($_GET['q']);
     <div id="solr-facets">
 
         <?php if ($num_solr_results): ?>
-            <h2><?php echo __('Limit your search'); ?></h2>
+            <h2><?php echo __('Limit by:'); ?></h2>
         <?php endif; ?>
 
         <?php foreach ($results->facet_counts->facet_fields as $name => $facets): ?>
