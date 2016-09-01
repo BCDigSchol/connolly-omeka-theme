@@ -2903,7 +2903,7 @@ margin-bottom: 20px;
   margin: 0 0 1.5em;
 }
 
-.element-text a[href*="viaf.org"]:after {
+.element-text a[href^="http://viaf.org"]:after {
   font-family: "FontAwesome";
    content: "VIAF ID \f14c";
    display: inline-block;
