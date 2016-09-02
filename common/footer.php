@@ -14,7 +14,9 @@
 
         <!-- HARDCODED CUSTOM FOOTER -->
 
-        <p class="project">This website was created through a partnership with S&eacute;amus Connolly and the Boston College Libraries. All materials on this site may be freely shared and adapted according to the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>        
+        <p class="project">
+        <span style="float: left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></span>
+        This website was created through a partnership with S&eacute;amus Connolly and the Boston College Libraries. All materials on this site may be freely shared and adapted according to the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>        
 
         <div class="footer-block">
             <a href="http://library.bc.edu/" target="_blank" title="The Boston College Libraries">
@@ -32,6 +34,7 @@
         <!-- END CUSTOM FOOTER-->
 
         <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
+
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
 
     </div><!-- end footer-content -->
