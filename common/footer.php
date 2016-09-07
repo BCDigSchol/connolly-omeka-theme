@@ -20,7 +20,7 @@
 
         <div class="footer-block">
             <a href="http://library.bc.edu/" target="_blank" title="The Boston College Libraries">
-                <img style="border-width: 0;" src="http://library.bc.edu/connolly/themes/CustomTheme/img/bc_title.png" alt="Boston College Libraries" />
+                <img style="border-width: 0;" src="/themes/CustomTheme/img/bc_title.png" alt="Boston College Libraries" />
             </a>
 
             <ul>

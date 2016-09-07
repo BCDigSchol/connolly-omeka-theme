@@ -20,12 +20,12 @@
                <?php echo files_for_item(array('imageSize'=>'fullsize')); ?>
           </div>
 
-            <?php if(metadata('item','Collection Name')): ?>
-            <div id="collection" class="element">
-              <h3><?php echo __('Collection'); ?></h3>
-              <div class="element-text"><?php echo link_to_collection_for_item(); ?></div>
-            </div>
-         <?php endif; ?>
+          <?php if(metadata('item','Collection Name')): ?>
+          <div id="collection" class="element">
+            <h3><?php echo __('Collection'); ?></h3>
+            <div class="element-text"><?php echo link_to_collection_for_item(); ?></div>
+          </div>
+       <?php endif; ?>
 
           <!-- The following prints a citation for this item. -->
       <div id="item-citation" class="element">
