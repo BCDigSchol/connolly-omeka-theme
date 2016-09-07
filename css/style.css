@@ -569,7 +569,7 @@ header {
   padding:  1px 0;
   height: 350px;
   position: relative;
-  background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header.png") no-repeat 0 100%;
+  background: url("/themes/CustomTheme/img/header.png") no-repeat 0 100%;
   background-size: cover;
   border-bottom: 2px solid #dedede;
 }
@@ -603,7 +603,7 @@ header:after {
   padding:  1px 0;
   height: 100%;
   position: relative;
-  background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header.png") no-repeat 20% 100%;
+  background: url("/themes/CustomTheme/img/header.png") no-repeat 20% 100%;
   background-size: cover;
   border-bottom: 2px solid #dedede;
   z-index: 0;
@@ -612,7 +612,7 @@ header:after {
 @media ( max-width: 800px ) {
   #home #wrapper > header {
       height: 350px;
-        background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/header_small.png") no-repeat 0 100%;
+        background: url("/themes/CustomTheme/img/header_small.png") no-repeat 0 100%;
   }
 }
 
@@ -698,11 +698,11 @@ header:after {
   height: 155px;
   text-decoration: none;
   text-indent: -9999px;
-  background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/title01.png") no-repeat;
+  background: url("/themes/CustomTheme/img/title01.png") no-repeat;
 }
 
 #site-title a:hover {
-      background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/title02.png") no-repeat;
+      background: url("/themes/CustomTheme/img/title02.png") no-repeat;
 }
 
 @media ( max-width: 800px ) {
@@ -2658,35 +2658,35 @@ footer nav + p {
 /* ASSIGNS PHOTOS TO CATEGORY BOXES */
 
 .boat {
-  background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_001.png") no-repeat;
+  background: url("/themes/CustomTheme/img/category_001.png") no-repeat;
 }
 
 .hill {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_002.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_002.png") no-repeat;
 }
 
 .grass {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_003.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_003.png") no-repeat;
 }
 
 .bridge {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_004.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_004.png") no-repeat;
 }
 
 .church {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_005.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_005.png") no-repeat;
 }
 
 .road {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_006.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_006.png") no-repeat;
 }
 
 .sky {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_007.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_007.png") no-repeat;
 }
 
 .rainbow {
-    background: url("http://library.bc.edu/connolly/themes/CustomTheme/img/category_008.png") no-repeat;
+    background: url("/themes/CustomTheme/img/category_008.png") no-repeat;
 }
 
 @media ( max-width: 800px ) {
