@@ -17,7 +17,7 @@
 
           <!--<h3><?php echo __('Files'); ?></h3>-->
           <div id="item-images">
-               <?php echo files_for_item(array('imageSize'=>'fullsize')); ?>
+               <?php echo files_for_item(['imageSize'=>'fullsize','linkAttributes'=>['target'=>'_blank']]); ?>
           </div>
 
           <?php if(metadata('item','Collection Name')): ?>
