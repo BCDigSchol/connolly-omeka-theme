@@ -81,8 +81,21 @@ function custom_paging()
     }
 }
 
-// Remove VIAF IDs
-function stripVIAF($citation_string)
+function connolly_format_citations($citation_string)
 {
-    return preg_replace('/\d{8,12}/', '', $citation_string);
+    $citation_string = strip_viaf($citation_string);
+    $citation_string = reverse_articles($citation_string);
+    return $citation_string;
+}
+
+function reverse_articles($citation_string)
+{
+    $citation_string = preg_replace('/&#8220;(.*), (The|A|An)(,| \/)/', '&#8220;$2 $1$3', $citation_string);
+    return $citation_string;
+}
+
+// Remove VIAF IDs
+function strip_viaf($citation_string)
+{
+    return preg_replace('/ \d{8,12}/', '', $citation_string);
 }
