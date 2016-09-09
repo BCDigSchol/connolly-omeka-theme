@@ -22,11 +22,21 @@
 
           <?php if(metadata('item','Collection Name')): ?>
           <div id="collection" class="element">
-            <h3><?php echo __('Collection'); ?></h3>
+            <h3><?php echo __('Song & Tune Type'); ?></h3>
             <div class="element-text"><?php echo link_to_collection_for_item(); ?></div>
           </div>
        <?php endif; ?>
 
+
+         <!-- The following prints a list of all tags associated with the item -->
+    <?php if (metadata('item','has tags')): ?>
+    <div id="item-tags" class="element">
+        <h3>Part of:</h3>
+        <div class="element-text"><?php echo tag_string('item'); ?></div>
+    </div>
+    <?php endif;?>
+    
+    
           <!-- The following prints a citation for this item. -->
       <div id="item-citation" class="element">
           <h3><?php echo __('Citation'); ?></h3>
@@ -36,13 +46,6 @@
       </div>
     </div>
 
-         <!-- The following prints a list of all tags associated with the item -->
-    <?php if (metadata('item','has tags')): ?>
-    <div id="item-tags" class="element">
-        <h3>Part of:</h3>
-        <div class="element-text"><?php echo tag_string('item'); ?></div>
-    </div>
-    <?php endif;?>
 
 
        <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
