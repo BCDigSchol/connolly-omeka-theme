@@ -9,7 +9,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 <nav class="items-nav navigation secondary-nav">
     <?php echo public_nav_items(array (
     array (
-    'label' => __('Browse by Playlist'),
+    'label' => __('Browse by Playlist Content'),
     'uri' => url('items/tags')
   ),
   array (
