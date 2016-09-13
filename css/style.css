@@ -3001,3 +3001,9 @@ img.full {
     display: none;
   }
 }
+
+/* HIDE search by EXHIBIT */
+
+#advanced-search-form .alpha, #advanced-search-form .omega {
+display: none;
+}
