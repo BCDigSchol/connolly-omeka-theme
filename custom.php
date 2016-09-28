@@ -99,3 +99,9 @@ function strip_viaf($citation_string)
 {
     return preg_replace('/ \d{8,12}/', '', $citation_string);
 }
+
+function bcl_link_to_browse_collection(Collection $collection)
+{
+    $name = metadata($collection, array('Dublin Core', 'Title'));
+    return link_to_items_browse($name, ['collection' => $collection->id]);
+}
