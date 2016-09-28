@@ -40,59 +40,6 @@
     <?php queue_js_file('berlin'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script>
-    var element = document.getElementById(element_id);
-    element.className += " " + newClassName;
-</script>
-
-<!-- SCROLL TO TOP SCRIPT -->
-  <script>
-     $(document).ready(function () {
-
-
-        $('.scrollup').click(function () {
-            $("html, body").animate({
-                scrollTop: $('#content').offset().top
-            }, 600);
-            return false;
-        });
-
-    });
-</script>
-
-<script>
-     $(document).ready(function () {
-        var $category = $('#categories h3');
-
-        $('#categories h3').each(function() {
-
-            $(this).hover(
-              function() {
-                  $(this).siblings('.innerbox').addClass('innerboxhover');
-              },
-
-              function() {
-                  $(this).siblings('.innerbox').removeClass('innerboxhover');
-              }
-            );
-        });
-
-        $('.innerbox').each(function() {
-
-            $(this).hover(
-              function() {
-                  $(this).siblings('#categories h3').addClass('categoriesboxh3hover');
-              },
-
-              function() {
-                  $(this).siblings('#categories h3').removeClass('categoriesboxh3hover');
-              }
-            );
-        });
-    });
-
-</script>
 
 </head>
 

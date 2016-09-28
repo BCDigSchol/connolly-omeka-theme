@@ -15,12 +15,12 @@
         <!-- HARDCODED CUSTOM FOOTER -->
 
         <p class="project">
-        <span style="float: left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></span>
+        <span style="float: left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" width="88" height="31" /></a></span>
         This website was created through a partnership with S&eacute;amus Connolly and the Boston College Libraries. All materials on this site may be freely shared and adapted according to the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>        
 
         <div class="footer-block">
             <a href="http://library.bc.edu/" target="_blank" title="The Boston College Libraries">
-                <img style="border-width: 0;" src="/themes/CustomTheme/img/bc_title.png" alt="Boston College Libraries" />
+                <img style="border-width: 0;" src="/themes/CustomTheme/img/bc_title.png" alt="Boston College Libraries" width="194" height="73" />
             </a>
 
             <ul>
@@ -53,6 +53,53 @@
         Omeka.megaMenu();
         Berlin.dropDown();
     });
+</script>
+
+<!-- SCROLL TO TOP SCRIPT -->
+<script>
+    $(document).ready(function () {
+
+
+        $('.scrollup').click(function () {
+            $("html, body").animate({
+                scrollTop: $('#content').offset().top
+            }, 600);
+            return false;
+        });
+
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        $('#categories h3').each(function() {
+
+            $(this).hover(
+                function() {
+                    $(this).siblings('.innerbox').addClass('innerboxhover');
+                },
+
+                function() {
+                    $(this).siblings('.innerbox').removeClass('innerboxhover');
+                }
+            );
+        });
+
+        $('.innerbox').each(function() {
+
+            $(this).hover(
+                function() {
+                    $(this).siblings('#categories h3').addClass('categoriesboxh3hover');
+                },
+
+                function() {
+                    $(this).siblings('#categories h3').removeClass('categoriesboxh3hover');
+                }
+            );
+        });
+    });
+
 </script>
 
 </body>
