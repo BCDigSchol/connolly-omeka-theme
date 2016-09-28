@@ -7,6 +7,8 @@
     <meta name="description" content="<?php echo $description; ?>" />
     <?php endif; ?>
 
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
     <?php
     if (isset($title)) {
         $titleParts[] = strip_formatting($title);
