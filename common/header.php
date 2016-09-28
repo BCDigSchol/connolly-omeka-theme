@@ -28,7 +28,9 @@
 
     <script src="https://use.fontawesome.com/2f554b814c.js"></script>
 
-
+    <!-- Icons -->
+    <link rel="icon" href="/themes/CustomTheme/img/favicon.ico" type="image/x-icon" / >
+    
     <!-- JavaScripts -->
     <?php queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)')); ?>
     <?php queue_js_file('vendor/respond'); ?>
@@ -49,7 +51,7 @@
 
         $('.scrollup').click(function () {
             $("html, body").animate({
-                scrollTop: $('#content').offset().top 
+                scrollTop: $('#content').offset().top
             }, 600);
             return false;
         });
@@ -62,7 +64,7 @@
         var $category = $('#categories h3');
 
         $('#categories h3').each(function() {
-          
+
             $(this).hover(
               function() {
                   $(this).siblings('.innerbox').addClass('innerboxhover');
@@ -75,7 +77,7 @@
         });
 
         $('.innerbox').each(function() {
-          
+
             $(this).hover(
               function() {
                   $(this).siblings('#categories h3').addClass('categoriesboxh3hover');
@@ -127,17 +129,17 @@
                   echo public_nav_main();
              ?>
 
-            
+
          </div>
-  
+
          <div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
              <?php
                   echo public_nav_main();
              ?>
          </div>
-        
+
         <?php echo theme_header_image(); ?>
-                       
+
     <div id="content" role="main" tabindex="-1">
 
 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
