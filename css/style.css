@@ -2912,6 +2912,10 @@ margin-bottom: 20px;
    font-size: 12px;
 }
 
+.element-text a[href*="http://viaf"] {
+  text-decoration: none;
+}
+
 /* COMING SOON BANNER */
 
 
