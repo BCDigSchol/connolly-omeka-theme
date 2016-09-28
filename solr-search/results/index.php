@@ -58,7 +58,7 @@ $cleaned_query = html_escape($_GET['q']);
 
                 <?php if ($label !== 'Result Type'): ?>
 
-                    <?php $label = 'Collection' ? 'Type' : $collection; ?>
+                    <?php $label === 'Collection' ? 'Type' : $collection; ?>
 
                     <strong><?php echo $label; ?></strong>
 
