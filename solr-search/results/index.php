@@ -129,7 +129,7 @@ $cleaned_query = html_escape($_GET['q']);
                     <ul class="hl">
                         <?php foreach ($results->highlighting->{$doc->id} as $field): ?>
                             <?php foreach ($field as $hl): ?>
-                                <li class="snippet">...<?php echo strip_tags($hl, '<em>'); ?>...</li>
+                                <li class="snippet"><?php echo bcl_fix_snippet_text(strip_tags($hl, '<em>')); ?></li>
                             <?php endforeach; ?>
                         <?php endforeach; ?>
                     </ul>

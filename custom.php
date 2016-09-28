@@ -105,3 +105,24 @@ function bcl_link_to_browse_collection(Collection $collection)
     $name = metadata($collection, array('Dublin Core', 'Title'));
     return link_to_items_browse($name, ['collection' => $collection->id]);
 }
+
+// The Solr search handles snippets poorly. This function fixes some of that.
+function bcl_fix_snippet_text($snippet_text)
+{
+    // HTML entities at the end of snippets aren't completed.
+    $snippet_text = preg_replace('/&lsquo$/u','‘',$snippet_text);
+    $snippet_text = preg_replace('/&rsquo$/u','’',$snippet_text);
+
+    // Punctuation at the start of a snippet looks dumb.
+    $snippet_text = ltrim($snippet_text,'.,; ');
+
+    // Only add ellipses if they really should be there.
+    if (! preg_match('/^[A-Z]/u',$snippet_text)) {
+        $snippet_text = "...$snippet_text";
+    }
+    if (! preg_match('/[\.]$/u', $snippet_text)) {
+        $snippet_text = "$snippet_text...";
+    }
+
+    return $snippet_text;
+}
