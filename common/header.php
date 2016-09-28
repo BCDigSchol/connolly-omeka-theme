@@ -40,6 +40,8 @@
     <?php queue_js_file('berlin'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
 
 </head>
 
