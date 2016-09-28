@@ -17,8 +17,7 @@ $sortLinks[__('Title')] = 'Dublin Core,Title';
 
 <div class="collection record">
 
-    <h2><?php echo link_to_collection(); ?></h2>
-
+    <h2><?php echo  metadata($collection, array('Dublin Core', 'Title'));?></h2>
 
     <?php if ($collectionImage = record_image('collection', 'square_thumbnail')): ?>
         <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
