@@ -3017,12 +3017,17 @@ display: none;
   color: #555;
   line-height: 1.5;
   letter-spacing: normal;
-  padding: .3em;
+  padding: 0;
   background-color: #e2e5e9;
 }
 
-#advanced-form.search-instructions ul {
+#advanced-form p {
+  padding: 1em .3em 0 .3em;
   margin: 0;
+}
+
+#advanced-form ul {
+  margin: .5em 0;
 }
 
 #advanced-form.search-instructions code {
@@ -3030,4 +3035,15 @@ display: none;
   background-color: white;
   padding: 0 .5em;
   font-size: 18px;
+}
+
+#advanced-form p.link-to-advanced-search {
+  background-color: #fffcff;
+  text-align: right;
+  padding: 1em;
+}
+
+#advanced-form p.link-to-advanced-search a {
+  text-decoration: none;
+  font-size: 16px;
 }

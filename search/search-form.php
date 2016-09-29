@@ -2,13 +2,14 @@
 <?php echo $this->formText('query', $_GET['q'], array('title' => __('Search'))); ?>
 <?php if ($options['show_advanced']): ?>
     <div id="advanced-form" class="search-instructions">
-        Search using:
+        <p>Search using:</p>
         <ul>
             <li>Keyword
             <li>AND, OR, NOT: <code>Jigs NOT Armagh</code>
             <li>Quotation marks: <code>"Jerry o'sullivan"</code>
             <li>Wildcard character * <code>Redican*</code>
         </ul>
+        <p class="link-to-advanced-search"><?php echo link_to_item_search(__('Advanced Search')); ?></p>
     </div>
 <?php else: ?>
     <?php echo $this->formHidden('query_type', $filters['query_type']); ?>
