@@ -6,7 +6,7 @@
         <ul>
             <li>Keyword
             <li>AND, OR, NOT: <code>Jigs NOT Armagh</code>
-            <li>Quotation marks: <code>"Jerry o'sullivan"</code>
+            <li>Quotation marks: <code>"Jerry O'Sullivan"</code>
             <li>Wildcard character * <code>Redican*</code>
         </ul>
         <p class="link-to-advanced-search"><?php echo link_to_item_search(__('Advanced Search')); ?></p>
