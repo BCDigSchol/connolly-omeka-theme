@@ -1149,7 +1149,7 @@ header:after {
   box-sizing: border-box;
   text-decoration: none;
   display: block;
-  padding: 11px 20px;
+  padding: 11px 28px;
    height: 40px;
 background: rgba(224,224,224,1);
 background: linear-gradient(to bottom, rgba(224,224,224,1) 0%, rgba(246,246,246,1) 32%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
@@ -2920,7 +2920,7 @@ margin-bottom: 20px;
 
 
 .ribbon {
-  display: block;
+  display: none;
   position: fixed;
   top: 30px;
   left: -50px;
@@ -2949,7 +2949,6 @@ box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.55);
 
 @media ( max-width: 800px ) {
   .ribbon {
-    display: block;
     position: absolute;
     top: 10px;
     left: 0;
