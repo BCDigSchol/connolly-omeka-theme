@@ -17,6 +17,9 @@ if (count($references)):
         }
         $pagination_list = '<ul class="pagination_list">';
         foreach ($letters as $letter => $isSet):
+            if ($letter == 'number') {
+                continue;
+            }
             $letterDisplay = $letter == 'number' ? '#0-9' : $letter;
             if ($isSet) {
                 $pagination_list .= sprintf(
@@ -43,9 +46,9 @@ if (count($references)):
         foreach ($references as $reference => $referenceData):
             // Add the first character as header if wanted.
             if ($options['headings']):
-                $first_char = substr($reference, 0, 1);
-                if (preg_match('/\W|\d/', $first_char)) {
-                    $first_char = '#0-9';
+                $first_char = mb_substr($reference, 0, 1);
+                if ($first_char === 'Ó') {
+                    $first_char = 'O';
                 }
                 $current_first_char = strtoupper($first_char);
                 if ($current_heading !== $current_first_char):
@@ -94,6 +97,6 @@ endif;
 function bcl_format_reference_link($string)
 {
     // Strip VIAF IDs
-    $string = preg_replace('/\(?\d{5,}\)?/','',$string);
+    $string = preg_replace('/\(?\d{5,}\)?/', '', $string);
     return trim($string);
 }
