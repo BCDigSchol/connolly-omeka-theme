@@ -29,7 +29,7 @@ function custom_paging()
             }
         } elseif (isset($queryarray['advanced'])) {
             if (!array_key_exists('sort_field', $queryarray)) {
-                $queryarray['sort_field'] = 'added';
+                $queryarray['sort_field'] =  'Dublin Core,Identifier';
                 $queryarray['sort_dir'] = 'd';
             }
             //Get an array of the items from the query.
@@ -41,7 +41,7 @@ function custom_paging()
         } //Browsing all items in general
         else {
             if (!array_key_exists('sort_field', $queryarray)) {
-                $queryarray['sort_field'] = 'added';
+                $queryarray['sort_field'] = 'Dublin Core,Identifier';
                 $queryarray['sort_dir'] = 'd';
             }
             $list = get_db()->getTable('Item')->findBy($queryarray);
