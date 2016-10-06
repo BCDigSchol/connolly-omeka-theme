@@ -126,3 +126,10 @@ function bcl_fix_snippet_text($snippet_text)
 
     return $snippet_text;
 }
+
+// Adds VIAF links around VIAF IDs.
+function bcl_add_viaf_links($text)
+{
+    $link_to_viaf = '<a href="http://viaf.org/viaf/\1/" target="_blank">\1</a>';
+    return preg_replace('/ (\d\d\d+)<\/a>/',"</a> $link_to_viaf" , $text);
+}

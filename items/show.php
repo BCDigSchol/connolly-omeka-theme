@@ -6,7 +6,7 @@
       <div class="left">
           <!-- Items metadata -->
           <div id="item-metadata">
-              <?php echo all_element_texts('item'); ?>
+              <?php echo bcl_add_viaf_links(all_element_texts('item')); ?>
           </div>
 
       </div>
