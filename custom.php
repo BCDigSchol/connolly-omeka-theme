@@ -1,4 +1,4 @@
-<!--Updated Jun 15, 2016 AK-->
+
 <?php
 function custom_paging()
 {
@@ -42,7 +42,7 @@ function custom_paging()
         else {
             if (!array_key_exists('sort_field', $queryarray)) {
                 $queryarray['sort_field'] = 'Dublin Core,Identifier';
-                $queryarray['sort_dir'] = 'd';
+                $queryarray['sort_dir'] = 'a';
             }
             $list = get_db()->getTable('Item')->findBy($queryarray);
             foreach ($list as $value) {
