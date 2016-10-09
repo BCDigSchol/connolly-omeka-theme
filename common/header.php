@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html class="<?php echo get_theme_option('Style Sheet'); ?>" lang="<?php echo get_html_lang(); ?>">
+<html prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
     <?php if ($description = option('description')): ?>
     <meta name="description" content="<?php echo $description; ?>" />
+    <meta name="author" content="Boston College Libraries; Séamus Connolly">
+    <meta name="keywords" content="Séamus Connolly, Irish Traditional Music, Boston College Libraries, Digital Scholarship">
+    <meta property="og:tag" content="Séamus Connolly, Irish Traditional Music, Boston College Libraries, Digital Scholarship">
+    <meta property="og:title" content="Séamus Connolly Collection of Irish Music">
+    <meta property="og:description" content="The Boston College Libraries are delighted to present The Séamus Connolly Collection of Irish Music. This digital collection features traditional tunes and songs collected by master fiddle player Séamus Connolly, Sullivan Family Artist-in-Residence in Irish Music at Boston College (2004 to 2015) and National Heritage Fellow (2013). Freely available, the collection offers over 330 audio recordings featuring more than 130 musicians via SoundCloud, with accompanying stories, transcriptions, and introductory essays.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://connollymusiccollection.bc.edu/">
+    <meta property="og:image" content="https://github.com/BCDigSchol/connolly-omeka-theme/blob/master/img/DSCF0016-Connolly-175-ppi.jpg">
+
     <?php endif; ?>
 
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
