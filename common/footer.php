@@ -35,7 +35,7 @@
 
         <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
 
-          <h6>Image Credit: The Killaloe Bridge and its thirteen arches inspired the name for the tune <a href="http://connollymusiccollection.bc.edu/document/590">"Thirteen Arches,"</a> composed by Séamus Connolly in memory of his father, Mick Connolly. Photograph by Séamus Connolly. <a href="http://connollymusiccollection.bc.edu/privacy-policy">Privacy Policy</a>. </h6>
+          <br /><h6>Image Credit: The Killaloe Bridge and its thirteen arches inspired the name for the tune <a href="http://connollymusiccollection.bc.edu/document/590">"Thirteen Arches,"</a> composed by Séamus Connolly in memory of his father, Mick Connolly. Photograph by Séamus Connolly. <a href="http://connollymusiccollection.bc.edu/privacy-policy">Privacy Policy</a>. </h6>
         
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
 
