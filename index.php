@@ -1,7 +1,7 @@
 <?php echo head(array('bodyid'=>'home', 'bodyclass' =>'two-col')); ?>
 
 <div class="intro">
-   <p>The Boston College Libraries are delighted to present <em>The Séamus Connolly Collection of Irish Music</em>. This digital collection features traditional tunes and songs collected by master fiddle player Séamus Connolly, Sullivan Family Artist-in-Residence in Irish Music at Boston College (2004 to 2015) and <a href="https://www.arts.gov/honors/heritage/fellows/s%C3%A9amus-connolly" target="_blank">National Heritage Fellow</a> (2013). Freely available, the collection offers over 330 audio recordings featuring more than 130 musicians via <a href="https://soundcloud.com/connollymusiccollection/" target="_blank">SoundCloud</a>, with accompanying stories, transcriptions, and introductory essays. </p>
+   <p>The Boston College Libraries are delighted to present <em>The Séamus Connolly Collection of Irish Music</em>. This digital collection features traditional tunes and songs collected by master fiddle player Séamus Connolly, Sullivan Artist in Residence in Irish Music at Boston College (2004 to 2015) and <a href="https://www.arts.gov/honors/heritage/fellows/s%C3%A9amus-connolly" target="_blank">National Heritage Fellow</a> (2013). Freely available, the collection offers over 330 audio recordings featuring more than 130 musicians via <a href="https://soundcloud.com/connollymusiccollection/" target="_blank">SoundCloud</a>, with accompanying stories, transcriptions, and introductory essays. </p>
 
 </div>
 
