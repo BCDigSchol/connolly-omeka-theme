@@ -17,7 +17,7 @@
 
     <?php endif; ?>
 
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
     <?php
     if (isset($title)) {
@@ -38,7 +38,7 @@
     ?>
 
 
-    <script src="https://use.fontawesome.com/2f554b814c.js"></script>
+    <script src="http://use.fontawesome.com/2f554b814c.js"></script>
 
     <!-- Icons -->
     <link rel="icon" href="/themes/CustomTheme/img/favicon.ico" type="image/x-icon" / >
@@ -50,13 +50,13 @@
     <?php queue_js_file('berlin'); ?>
     <?php queue_js_file('globals'); ?>
     <?php echo head_js(); ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
         ga('create', 'UA-76427417-2', 'auto');
         ga('send', 'pageview');
