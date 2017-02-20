@@ -8,6 +8,7 @@
             <li>AND, OR, NOT: <code>Jigs NOT Armagh</code>
             <li>Quotation marks: <code>"Jerry O'Sullivan"</code>
             <li>Wildcard character * <code>Redican*</code>
+            <li><a href="/search-tips">Additional search tips</a></li>
         </ul>
         <p class="link-to-advanced-search"><?php echo link_to_item_search(__('Advanced Search')); ?></p>
     </div>

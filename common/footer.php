@@ -16,7 +16,7 @@
 
         <p class="project">
         <span style="float: left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" width="88" height="31" /></a></span>
-        This website was created through a partnership with S&eacute;amus Connolly and the Boston College Libraries (2016). All materials on this site may be freely shared and adapted according to the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>        
+        This website was created through a partnership with S&eacute;amus Connolly and the Boston College Libraries (2016). All materials on this site may be freely shared and adapted according to the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
 
         <div class="footer-block">
             <a href="http://library.bc.edu/" target="_blank" title="The Boston College Libraries">
@@ -34,9 +34,9 @@
         <!-- END CUSTOM FOOTER-->
 
         <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
+<br />
+        <h6>Image Credit: The Killaloe Bridge and its thirteen arches inspired the name for the tune <a href="http://connollymusiccollection.bc.edu/document/590">"Thirteen Arches,"</a> composed by Séamus Connolly in memory of his father, Mick Connolly. Photograph by Séamus Connolly. <a href="http://connollymusiccollection.bc.edu/privacy-policy">Privacy Policy</a>. </h6>
 
-          <br /><h6>Image Credit: The Killaloe Bridge and its thirteen arches inspired the name for the tune <a href="http://connollymusiccollection.bc.edu/document/590">"Thirteen Arches,"</a> composed by Séamus Connolly in memory of his father, Mick Connolly. Photograph by Séamus Connolly. <a href="http://connollymusiccollection.bc.edu/privacy-policy">Privacy Policy</a>. </h6>
-        
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
 
     </div><!-- end footer-content -->
