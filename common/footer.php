@@ -17,6 +17,7 @@
         <p class="project">
         <span style="float: left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" width="88" height="31" /></a></span>
         This website was created through a partnership with S&eacute;amus Connolly and the Boston College Libraries (2016). All materials on this site may be freely shared and adapted according to the terms of the <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+      <p>Suggested project citation: Seamus Connolly and Boston College Libraries, 2016. <i>The Séamus Connolly Collection of Irish Music</i>. DOI 10.17605/OSF.IO/DRFS8. Available at: <a href="https://osf.io/drfs8/" target="_blank">osf.io/drfs8.</a></p>
 
         <div class="footer-block">
             <a href="http://library.bc.edu/" target="_blank" title="The Boston College Libraries">
