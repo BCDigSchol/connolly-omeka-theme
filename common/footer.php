@@ -34,15 +34,37 @@
 
         <!-- END CUSTOM FOOTER-->
 
-        <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
+
+        <nav>
+          <ul class="navigation">
+               <li>
+                   <a href="/items/browse?sort_field=Dublin+Core%2CIdentifier">Browse Content</a>
+               </li>
+               <li>
+                   <a href="/collections/browse?sort_field=Dublin+Core%2CTitle">Song &amp; Tune Types</a>
+               </li>
+               <li>
+                   <a href="/exhibits/show/essays/">Essays</a>
+               </li>
+               <li>
+                   <a href="/exhibits/show/playlists">Playlists</a>
+               </li>
+               <li>
+                   <a href="/about">About</a>
+               </li>
+               <li>
+                   <a href="/contact">Contact</a>
+               </li>
+           </ul>
+       </nav>
+
+
 <br />
         <h6>Image Credit: The Killaloe Bridge and its thirteen arches inspired the name for the tune <a href="http://connollymusiccollection.bc.edu/document/590">"Thirteen Arches,"</a> composed by Séamus Connolly in memory of his father, Mick Connolly. Photograph by Séamus Connolly. <a href="http://connollymusiccollection.bc.edu/privacy-policy">Privacy Policy</a>. </h6>
 
         <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
 
     </div><!-- end footer-content -->
-
-     <?php fire_plugin_hook('public_footer', array('view'=>$this)); ?>
 
 </footer>
 
@@ -104,6 +126,7 @@
     });
 
 </script>
+
 
 </body>
 
