@@ -17,7 +17,7 @@
         <span class="innerbox hill"></span>
     </a>
 
-    <a href="http://connollymusiccollection.bc.edu/exhibits/show/essays/essay-connolly" id="box" class="gray end">
+    <a href="http://connollymusiccollection.bc.edu/exhibits/show/essays" id="box" class="gray end">
         <h3>Essays</h3>
         <span class="innerbox sky"></span>
     </a>
