@@ -878,7 +878,7 @@ header:after {
     position: absolute !important;
     text-decoration: none !important;
     text-indent: -9999px !important;
-    behavior: url("../javascripts/boxsizing.htc") !important; 
+    behavior: url("../javascripts/boxsizing.htc") !important;
     -moz-box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box!important ;
@@ -969,10 +969,10 @@ header:after {
   position: relative;
   margin: -40px auto 25px;
   padding: 0 0 0 0;
-  width: 755px;
+  width: auto;
   z-index: 1;
   background: transparent;
-  display: block;
+  display: table;
 
   /* mega menu list */
   /* a top level navigation item in the mega menu */
@@ -2893,6 +2893,7 @@ a.scrollup {
 overflow: hidden;
 clear: both;
 margin-bottom: 20px;
+word-wrap: break-word; /* ATTEMPT AT FIXING CUT OFF TEXT */
 }
 
 .show #primary .element h3{

@@ -25,7 +25,7 @@
             </a>
 
             <ul>
-                <li><a href="mailto:burnsref@bc.edu" target="_blank" id="contact" class="mediablock"><span class="accessibility-text"Contact Us</span></a></li>
+                <li><a href="mailto:burnsref@bc.edu" target="_blank" id="contact" class="mediablock"><span class="accessibility-text">Contact Us</span></a></li>
                 <li><a href="https://twitter.com/bclibraries" target="_blank" id="twitter" class="mediablock"><span class="accessibility-text">Boston College Library's Twitter feed</span></a></li>
                 <li><a href="https://www.facebook.com/bostoncollegelibraries/" target="_blank" id="facebook" class="mediablock"><span class="accessibility-text">Boston College Library's Facebook</span></a></li>
                 <li><a href="https://soundcloud.com/connollymusiccollection" target="_blank" id="soundcloud" class="mediablock"><span class="accessibility-text">Seamus Connolly on SoundCloud</span></a></li>
