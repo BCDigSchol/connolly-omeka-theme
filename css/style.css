@@ -407,7 +407,6 @@ th {
 }
 
 body {
-  /*font: 16px "Gill Sans MT","Gill Sans",sans-serif;*/
   font: 16px "Helvetica Neue", "Helvetica", Arial, sans-serif;
   line-height: 18px;
   color: #333;
@@ -2541,6 +2540,11 @@ footer nav + p {
 
 /* CHP custom code */
 
+#primary, #content {
+  font-size: 18px;
+  line-height: 1.45;
+}
+
 /* CATEGORY BOX CSS */
 
 #categories {
@@ -2759,11 +2763,6 @@ footer nav + p {
   }
 }
 
-/*#auto_content #featured-exhibit {
-    width: 48%;
-    float: right;
-}*/
-
 #featured-item h2 {
   background: #006d44;
 }
@@ -2781,22 +2780,6 @@ footer nav + p {
 }
 
 /* SCROLL TO TOP */
-
-/*#home .scrollup {
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    bottom: 50px;
-    right: 100px;
-    display: block;
-    background-color: #369;
-    text-decoration: none;
-    color: #fff;
-    padding: 25px 10px;
-    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-}*/
 
 #home a.scrollup {
     width: 100%;
@@ -2897,9 +2880,11 @@ word-wrap: break-word; /* ATTEMPT AT FIXING CUT OFF TEXT */
 }
 
 .show #primary .element h3{
-  margin: 0;
+  margin-bottom: .25em;
+  font-size: 1.25em;
+  line-height: 1.4;
 }
-
+`
 .show #primary .element p {
   margin: 0 0 1.5em;
 }
