@@ -20,6 +20,13 @@
                <?php echo files_for_item(['imageSize'=>'fullsize','linkAttributes'=>['target'=>'_blank']]); ?>
           </div>
 
+
+<!--<h3><?php echo __('Note'); ?></h3>-->
+          <div id="note" class="element">
+            <div class="element-text"><?php echo metadata('item', array('Dublin Core','Type')); ?></div>
+          </div>
+
+
           <?php if(metadata('item','Collection Name')): ?>
           <div id="collection" class="element">
             <h3><?php echo __('Song & Tune Type'); ?></h3>
@@ -35,8 +42,8 @@
         <div class="element-text"><?php echo tag_string('item'); ?></div>
     </div>
     <?php endif;?>
-    
-    
+
+
           <!-- The following prints a citation for this item. -->
       <div id="item-citation" class="element">
           <h3><?php echo __('Citation'); ?></h3>

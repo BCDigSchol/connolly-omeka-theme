@@ -42,7 +42,7 @@
 
     <!-- Icons -->
     <link rel="icon" href="/themes/CustomTheme/img/favicon.ico" type="image/x-icon" / >
-    
+
     <!-- JavaScripts -->
     <?php queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)')); ?>
     <?php queue_js_file('vendor/respond'); ?>
@@ -61,6 +61,8 @@
         ga('create', 'UA-76427417-2', 'auto');
         ga('send', 'pageview');
     </script>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 
@@ -88,7 +90,7 @@
                       <?php endif; ?>
                     </div>
                       <div class="null">
-                      <a href="#" class="scrollup" title="Scroll to content"><span class="arrow"></span>Jump to content</a>
+                      <a href="#content" class="scrollup" title="Scroll to content"><span class="arrow"></span>Jump to content</a>
                       </div>
               </div>
 
