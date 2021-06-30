@@ -568,7 +568,7 @@ header {
   padding:  1px 0;
   height: 350px;
   position: relative;
-  background: url("/themes/CustomTheme/img/header.png") no-repeat 0 100%;
+  background: url("/themes/CustomTheme/img/header.jpg") no-repeat 0 100%;
   background-size: cover;
   border-bottom: 2px solid #dedede;
 }
@@ -602,7 +602,7 @@ header:after {
   padding:  1px 0;
   height: 100%;
   position: relative;
-  background: url("/themes/CustomTheme/img/header.png") no-repeat 20% 100%;
+  background: url("/themes/CustomTheme/img/header.jpg") no-repeat 20% 100%;
   background-size: cover;
   border-bottom: 2px solid #dedede;
   z-index: 0;
